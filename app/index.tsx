@@ -1,13 +1,19 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Redirect } from "expo-router";
 
 const index = () => {
-  return (
-    <SafeAreaView>
-      <Text className="font-bold text-3xl text-red-500">index</Text>
-    </SafeAreaView>
-  );
+  const onboarded = false;
+
+  if (onboarded) return <Redirect href="/(tabs)" />;
+
+  // return (
+  //   <SafeAreaView>
+  //     <Text className="font-bold text-3xl text-red-500">index</Text>
+  //   </SafeAreaView>
+  // );
+  return <Redirect href="/onboarding" />;
 };
 
 export default index;
