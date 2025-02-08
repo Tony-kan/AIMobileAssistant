@@ -2,7 +2,7 @@ import { View, Text, Image, Pressable } from "react-native";
 import React from "react";
 import { router, Stack } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { images } from "@/constants";
+import { icons, images } from "@/constants";
 
 const onBoarding = () => {
   return (
@@ -17,7 +17,7 @@ const onBoarding = () => {
       <View className="flex items-center justify-center">
         <Image
           className="size-72"
-          source={images.welcome}
+          source={icons.tonai_icon}
           resizeMode="contain"
         />
       </View>

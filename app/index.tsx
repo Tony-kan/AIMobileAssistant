@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Redirect } from "expo-router";
 
 const index = () => {
-  const onboarded = false;
+  const onboarded = true;
 
   if (onboarded) return <Redirect href="/(tabs)" />;
 
