@@ -34,3 +34,24 @@ export const ai_models = [
     bg_color: "blue-300",
   },
 ];
+
+export const dummyMessages = [
+  {
+    role: "user",
+    content: "How are you ?",
+  },
+  {
+    role: "assistant",
+    content: "I'm fine , How may i help you today ?",
+  },
+  {
+    role: "user",
+    content: "create an image of a  dog playing with a cat",
+  },
+  {
+    role: "assistant",
+    // content: "https://storage.googleapis.com/pai-images/ae74b3002bfe4b538493ca7aedb6a300.jpeg",
+    content:
+      "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/14c3c243-b7f3-4e66-9e1e-feef79978cec/8a4c0c08-f9e2-4966-b924-c8679975f028.png",
+  },
+];
