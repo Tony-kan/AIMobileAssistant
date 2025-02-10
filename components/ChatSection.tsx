@@ -17,7 +17,7 @@ const ChatSection = ({ messages }: { messages: chatSectionProps[] }) => {
   };
   return (
     <ScrollView
-      contentContainerClassName="bg-neutral-200 rounded p-4 h-full"
+      contentContainerClassName="bg-neutral-200 rounded p-4 "
       refreshControl={
         <RefreshControl
           refreshing={refreshing}
@@ -38,7 +38,7 @@ const ChatSection = ({ messages }: { messages: chatSectionProps[] }) => {
                 // render an image
                 <View className="flex-row justify-start items-center gap-2">
                   <View className="bg-black rounded-3xl size-8 flex justify-center items-center">
-                    <Text className="text-white font-extrabold">A</Text>
+                    <Text className="text-white font-extrabold">TA</Text>
                   </View>
                   <View className="p-2 flex rounded-2xl bg-teal-200 rounded-tl-none">
                     <Image
@@ -52,7 +52,7 @@ const ChatSection = ({ messages }: { messages: chatSectionProps[] }) => {
                 // render a text response
                 <View className="flex-row justify-start items-center gap-2">
                   <View className="bg-black rounded-3xl size-8 flex justify-center items-center">
-                    <Text className="text-white font-extrabold">A</Text>
+                    <Text className="text-white font-extrabold">TA</Text>
                   </View>
                   <View className="bg-teal-200 rounded-xl p-4 rounded-tl-none flex-row">
                     <Text> {message.content}</Text>
