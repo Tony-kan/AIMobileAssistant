@@ -12,24 +12,23 @@ const Notes = () => {
   return (
     <SafeAreaView className="bg-white h-full -z-50">
       <Stack.Screen options={{ title: "All notes" }} />
-
+      <View>
+        <View className="flex justify-center items-center ">
+          <Text className="font-extrabold mt-2 text-xl ">All Notes</Text>
+        </View>
+        <View>
+          <SearchInput placeholder="Search Notes" type="notes" />
+        </View>
+      </View>
       <FlatList
         data={dummyNotes}
         // data={[]}
         renderItem={({ item }) => <NoteCard item={item} />}
-        // keyExtractor={() => item?.toString()}
-        ListHeaderComponent={
-          <View>
-            <View className="flex justify-center items-center ">
-              <Text className="font-extrabold mt-2 text-xl ">All Notes</Text>
-            </View>
-            <View>
-              <SearchInput placeholder="Search Notes" />
-            </View>
-          </View>
-        }
         ListEmptyComponent={<NotFound message="Notes Not Found" />}
         keyExtractor={(item) => item.id}
+        showsVerticalScrollIndicator={false}
+        bounces={false}
+        contentContainerClassName="pb-20"
       />
       <FloatingButton />
     </SafeAreaView>

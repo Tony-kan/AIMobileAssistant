@@ -1,9 +1,12 @@
 import { View, Text, TextInput } from "react-native";
 import React, { useState } from "react";
 
-interface SearchInputProps {}
+interface SearchInputProps {
+  placeholder: string;
+  type: string;
+}
 
-const SearchInput = ({ placeholder, query }: SearchInputProps) => {
+const SearchInput = ({ placeholder, type }: SearchInputProps) => {
   const [focus, setFocus] = useState(false);
   return (
     <View className="flex items-center justify-center p-4 mx-2">

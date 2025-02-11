@@ -5,11 +5,13 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { router } from "expo-router";
 
 interface NoteCardProps {
-  id: string;
-  title: string;
-  content: string;
-  category: string;
-  createdAt: any;
+  item: {
+    id: string;
+    title: string;
+    content: string;
+    category: string;
+    createdAt: any;
+  };
 }
 
 const NoteCard = ({
