@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Stack } from "expo-router";
 import SearchInput from "@/components/SearchInput";
 import NoteCard from "@/components/NoteCard";
-import { dummyNotes } from "@/lib";
+import { dummyNotes } from "@/lib/DummyData";
 import FloatingButton from "@/components/FloatingButton";
 import NotFound from "@/components/NotFound";
 

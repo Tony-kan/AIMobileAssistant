@@ -8,13 +8,14 @@ import {
   Pressable,
 } from "react-native";
 import React, { useState } from "react";
-import { ai_models, dummyMessages } from "@/lib";
+import { ai_models } from "@/lib";
 import AIModelsCard from "@/components/AIModelsCard";
 import { icons, images } from "@/constants";
 import { Stack } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import ChatSection from "@/components/ChatSection";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { dummyMessages } from "@/lib/DummyData";
 
 //Todo : refresh pull should refetch data
 

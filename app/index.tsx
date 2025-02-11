@@ -6,7 +6,7 @@ import { Redirect } from "expo-router";
 const index = () => {
   const onboarded = true;
 
-  if (onboarded) return <Redirect href="/(tabs)/notes" />;
+  if (onboarded) return <Redirect href="/(tabs)/todos" />;
 
   // return (
   //   <SafeAreaView>
