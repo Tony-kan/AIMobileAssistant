@@ -14,6 +14,8 @@ const index = () => {
   //   </SafeAreaView>
   // );
   return <Redirect href="/onboarding" />;
+
+  // return <Redirect href="" />;
 };
 
 export default index;

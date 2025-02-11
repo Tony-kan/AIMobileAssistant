@@ -46,6 +46,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="todos"
+        options={{
+          title: "Todos",
+          tabBarIcon: ({ color }) => (
+            <IconSymbol size={28} name="tasks.fill" color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
