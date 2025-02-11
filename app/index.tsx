@@ -6,7 +6,7 @@ import { Redirect } from "expo-router";
 const index = () => {
   const onboarded = true;
 
-  if (onboarded) return <Redirect href="/(tabs)" />;
+  if (onboarded) return <Redirect href="/(tabs)/notes" />;
 
   // return (
   //   <SafeAreaView>
@@ -15,7 +15,7 @@ const index = () => {
   // );
   return <Redirect href="/onboarding" />;
 
-  // return <Redirect href="" />;
+  // return <Redirect href="/(tabs)/notes" />;
 };
 
 export default index;

@@ -55,3 +55,48 @@ export const dummyMessages = [
       "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/14c3c243-b7f3-4e66-9e1e-feef79978cec/8a4c0c08-f9e2-4966-b924-c8679975f028.png",
   },
 ];
+
+export const dummyNotes = [
+  {
+    id: "1",
+    title: "Meeting Notes",
+    content: "Discussed project roadmap and milestones.",
+    createdAt: "2025-02-11T10:30:00Z",
+    category: "Work",
+  },
+  {
+    id: "2",
+    title: "Grocery List",
+    content: "Milk, eggs, bread, and vegetables.",
+    createdAt: "2025-02-11T12:00:00Z",
+    category: "Personal",
+  },
+  {
+    id: "3",
+    title: "AI Research Ideas",
+    content: "Exploring transformer models for NLP applications.",
+    createdAt: "2025-02-10T15:45:00Z",
+    category: "Research",
+  },
+  {
+    id: "4",
+    title: "Workout Plan",
+    content: "Monday: Cardio, Tuesday: Strength training, Wednesday: Yoga.",
+    createdAt: "2025-02-09T08:00:00Z",
+    category: "Health",
+  },
+  {
+    id: "5",
+    title: "Book Recommendations",
+    content: "Thinking, Fast and Slow; The Lean Startup; Deep Work.",
+    createdAt: "2025-02-08T14:20:00Z",
+    category: "Reading",
+  },
+  {
+    id: "6",
+    title: "App Feature Ideas",
+    content: "Implement AI-driven recommendations and improve UI animations.",
+    createdAt: "2025-02-07T18:10:00Z",
+    category: "Development",
+  },
+];

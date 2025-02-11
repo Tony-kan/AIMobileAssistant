@@ -7,6 +7,7 @@ import { IconSymbol } from "@/components/ui/IconSymbol";
 import TabBarBackground from "@/components/ui/TabBarBackground";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { FontAwesome5, FontAwesome6 } from "@expo/vector-icons";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -51,7 +52,8 @@ export default function TabLayout() {
         options={{
           title: "Todos",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="tasks.fill" color={color} />
+            // <IconSymbol size={28} name="video-call" color={color} />
+            <FontAwesome5 name="tasks" color={color} />
           ),
         }}
       />
